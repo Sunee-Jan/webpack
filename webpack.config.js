@@ -1,8 +1,16 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
-  mode: "development", //development为开发者模式，production为用户模式
-  entry: "./src/index.js", // string | object | array
+  mode: "development",
+  entry: "./src/index.js",
   output: {
-    filename: "index.js", //默认是生成main.js,可修改
-    filename: "[contenthash].js",
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].[contenthash].js",
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "My App", //即html的<title>部分
+      template: "src/assets/index.html",
+    }),
+  ],
 };
