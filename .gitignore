@@ -1,3 +1,8 @@
-/dist/
 /node_modules/
-server.js
+/src/
+/package-lock.json/
+/ignore/
+# /package.json/
+# /webpack.config.base.js/
+# /webpack.config.prod.js/
+# /webpack.config.js/
