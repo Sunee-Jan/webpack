@@ -1,5 +1,6 @@
 // import "./style.scss";
-import "./style.css";
+import "./style.less";
 // import "./m.scss";
-import "./style.css";
+import "./style.less";
+import "./x.styl";
 export default "xxx";
